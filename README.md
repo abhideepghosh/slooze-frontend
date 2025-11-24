@@ -31,7 +31,7 @@ A comprehensive Commodities Management System built with Next.js, React, and Tai
     ```
 
 3.  **Open Application**:
-    Navigate to [http://localhost:3000](http://localhost:3000).
+    Navigate to [https://slooze-frontend-lyart.vercel.app](https://slooze-frontend-lyart.vercel.app).
 
 ## User Credentials
 
@@ -56,6 +56,4 @@ Use the following credentials to log in and test different roles:
 - `src/context`: Global state management (Auth, Theme, Product).
 - `src/lib`: Utility functions.
 
-## License
-
-This project is open-source and available under the MIT License.
+## Created By Abhideep Ghosh
