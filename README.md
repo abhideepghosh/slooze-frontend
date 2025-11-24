@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Commodities Management System
+
+A comprehensive Commodities Management System built with Next.js, React, and Tailwind CSS. This application features role-based access control, product management, and a dashboard for managers.
+
+## Features
+
+- **Role-Based Access Control (RBAC)**: Distinct roles for Managers and Store Keepers.
+- **Dashboard**: Exclusive view for Managers with sales statistics and charts.
+- **Product Management**: Full CRUD capabilities for managing product inventory.
+- **Dark Mode**: Built-in light and dark theme support.
+- **Responsive Design**: Optimized for all device sizes.
+
+## Tech Stack
+
+- **Framework**: Next.js 15 (App Router)
+- **Library**: React 19
+- **Styling**: Tailwind CSS 4
+- **Icons**: Lucide React
+- **Charts**: Recharts
 
 ## Getting Started
 
-First, run the development server:
+1.  **Install Dependencies**:
+    ```bash
+    npm install
+    ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2.  **Run Development Server**:
+    ```bash
+    npm run dev
+    ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3.  **Open Application**:
+    Navigate to [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## User Credentials
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Use the following credentials to log in and test different roles:
 
-## Learn More
+### Manager Role
+*Access to Dashboard, Product Management (Add/Edit/Delete)*
+- **Username**: `manager`
+- **Password**: `password`
 
-To learn more about Next.js, take a look at the following resources:
+### Store Keeper Role
+*Access to Product Management (Add/Edit only), No Dashboard access*
+- **Username**: `keeper`
+- **Password**: `password`
+- **Username**: `store_keeper`
+- **Password**: `password`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `src/app`: Next.js App Router pages.
+- `src/components`: Reusable UI components (Layout, Auth, Dashboard).
+- `src/context`: Global state management (Auth, Theme, Product).
+- `src/lib`: Utility functions.
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is open-source and available under the MIT License.
